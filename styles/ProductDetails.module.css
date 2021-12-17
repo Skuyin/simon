@@ -1,0 +1,65 @@
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.imgContainer {
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.imgContainer:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    padding: 10px;
+}
+
+.btn {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: gold;
+}
+
+
+
+
+.orderContainer {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow:0px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.labelList {
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+
+}
