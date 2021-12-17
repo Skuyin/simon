@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import data from '../../utils/data';
 import styles from '../../styles/ProductDetails.module.css';
@@ -20,6 +19,7 @@ export default function ProductDetails({product}) {
         <>
         <Navbar />
         <div className={styles.container}>
+            <Link href="/" passHref><h4 style={{cursor: 'pointer'}}>Back to Home</h4></Link>
             <div className={styles.wrapper}>
                 <div className={styles.left}>
                 <div className={styles.imgContainer}>
@@ -37,7 +37,7 @@ export default function ProductDetails({product}) {
             {order && 
                 <div className={styles.orderContainer}>
                     <h1>Payment</h1>
-                    <h4>currently we using manual payment for confirm pls contact admin below</h4>
+                    <h4>currently we using manual payment for confirm your pls contact admin below</h4>
                     <h4>Your Order: {product.name}</h4>
                     <h4>Price: {product.price}</h4>
                     <h5>*Prices not include shipping costs more info contact whatsup or instagram </h5>
